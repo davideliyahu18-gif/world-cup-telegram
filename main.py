@@ -1,7 +1,7 @@
 
 import requests
 
-API_KEY = "d1afcf8ed3852939ef24767220889871”
+API_KEY = "d1afcf8ed3852939ef24767220889871"
 
 url = "https://v3.football.api-sports.io/fixtures?live=all"
 
