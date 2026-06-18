@@ -1,17 +1,16 @@
-
+import os
 import requests
 
-BOT_TOKEN = "8648426108:AAHhM-5ioqeiVPYSDfyVcOgfIl2VL1Q9NdI"
-CHAT_ID = "@eliyahucup"
+API_KEY = os.getenv("API_KEY")
 
-url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+headers = {
+    "x-apisports-key": API_KEY
+}
 
-r = requests.post(
-    url,
-    data={
-        "chat_id": CHAT_ID,
-        "text": "בדיקה"
-    }
+r = requests.get(
+    "https://v3.football.api-sports.io/status",
+    headers=headers
 )
 
+print(r.status_code)
 print(r.text)
