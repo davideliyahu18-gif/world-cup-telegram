@@ -2,7 +2,7 @@
 import requests
  
 BOT_TOKEN ="8648426108:AAHhM-5ioqeiVPYSDfyVcOgfIl2VL1Q9NdI"
-CHAT_ID = "@israelmood"
+CHAT_ID = "@eliyahucup"
 
 url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
 
